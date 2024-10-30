@@ -96,6 +96,12 @@
 }
 
 @media (max-width: 1024px) {
+    .logo {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar {
         padding: 10px 20px;
     }
