@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+    max-width: 100%;
+    right: 0;
+    padding: 15px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.logoImage {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logoHighlight {
+    color: #ffa500;
+}
+
+.navLinksContainer {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 30px;
+    padding-right: 10%;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ffa500;
+}
+
+.navButtonLink {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+}
+
+.cartProfileContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #ffa500;
+}
+
+.cartLink {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+}
+
+.cartCount {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ffa500;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-left: 5px;
+    }
+}

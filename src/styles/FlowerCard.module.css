@@ -1,0 +1,83 @@
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galleryItem {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 10px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.galleryItem:hover {
+    transform: scale(1.05);
+}
+
+.galleryImage {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.galleryText {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #777;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.addToCartButton {
+    padding: 8px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addToCartButton:hover {
+    background-color: #cc8500;
+}
+
+@media (max-width: 1024px) {
+    .galleryItem {
+        width: calc(33.33% - 10px);
+    }
+
+    .galleryText,
+    .price,
+    .description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .galleryItem {
+        width: calc(50% - 10px);
+    }
+
+    .description {
+        display: none;
+    }
+
+    .addToCartButton {
+        width: 100%;
+    }
+}

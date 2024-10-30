@@ -1,0 +1,44 @@
+.flowerShopContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shopTitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: #ffa500;
+}
+
+.notFound {
+    color: #ffa500;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.loading {
+    color: #ffa500;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .searchInput {
+        width: 90%;
+    }
+}

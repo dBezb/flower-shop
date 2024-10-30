@@ -1,0 +1,235 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.heroTextContainer {
+    max-width: 50%;
+}
+
+.heroTitle {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333;
+}
+
+.heroText {
+    font-size: 18px;
+    color: #666;
+    margin: 40px 0;
+}
+
+.heroButton {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.heroButton:hover {
+    background-color: #cc8500;
+}
+
+.heroImagesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 50%;
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bestSellers {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sectionTitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.galleryItems {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aboutUs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.aboutText {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.comments {
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 110px;
+    text-align: center;
+}
+
+.commentCards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.commentCard {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commentAvatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.commentName {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.commentText {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 16px;
+    color: #ffa500;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        width: 90%;
+    }
+    .galleryItems {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .galleryItems > *:nth-child(n + 4) {
+        display: none;
+    }
+
+    .commentCards {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .heroTextContainer {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+    }
+
+    .heroText {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .heroImagesContainer {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px 40px;
+        grid-gap: 10px;
+        max-width: 100%;
+    }
+
+    .bestSellers {
+        padding: 30px 20px;
+    }
+
+    .sectionTitle {
+        font-size: 28px;
+    }
+
+    .galleryItems {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .galleryItems > *:nth-child(n + 4) {
+        display: none;
+    }
+
+    .aboutUs {
+        padding: 30px 20px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+    }
+
+    .commentCards {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .commentCard {
+        padding: 15px;
+    }
+}
